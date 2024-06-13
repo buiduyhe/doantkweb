@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trang chủ</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- themify-icons -->
+    <link rel="stylesheet" href="Assets/themify-icons/themify-icons.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="Assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="Assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="Assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="Assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"></i>EVISU</h1>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
+                    <a href="" onclick="goToCart()" class="nav-item nav-link">About</a>
+                    <a href="" onclick="goToCart()" class="nav-item nav-link">Tiện ích</a>
+                    <a href="" onclick="goToCart()" class="nav-item nav-link">Dịch Vụ</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="TrangChu.html" class="dropdown-item">Shop</a>
+                        </div>
+                    </div>
+                    <a href="" class="nav-item nav-link">Contact</a>
+                </div>
+
+                <div id="login-btn">
+                    <a class="btn btn-primary rounded-pill py-2 px-4" style="margin-right: 15px;"
+                        href="login.html?form=login"><i class="fa fa-user"></i> SignIn</a>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="login.html?form=login"><i
+                            class="fa fa-user"></i> Signup</a>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+    </div>
+
+    <!-- Navbar & Hero End -->
+
+
+
+    <div>
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Hé lo mọi người</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown" style="margin-top: 30px;"> chào mừng đến
+                            với cửa hàng của các dân
+                            chơi</p>
+                        <form class="position-relative w-75 mx-auto animated slideInDown" action="TrangChu.html">
+                            <button type="submit" class="btn btn-primary rounded-pill py-2 px-4 top-0 end-0 me-2"
+                                style="margin-top: 50px; width: 400px;height: 100px;">GET STARTED</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
+                    <h1 class="mb-5">Awesome Packages</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="package-item">
+                            <div class="overflow-hidden image-container">
+                                <img src="image/sanpham3.png " alt="Hình 1" style="width: 360px;">
+                            </div>
+                            <div class="d-flex border-bottom">
+                                <small class="flex-fill text-center border-end py-2"><i class="ti-crown"></i> Áo khoác
+                                    thời trang nam</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt text-primary me-2"></i></small>
+                                <small class="flex-fill text-center py-2"><i
+                                        class="fa fa-user text-primary me-2"></i>5k</small>
+                            </div>
+                            <div class="text-center p-4">
+                                <h3 class="mb-0">60$</h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p>Áo khoác thời trang nam</p>
+                                <div class="d-flex justify-content-center mb-2">
+                                    <a href="" class="btn btn-sm btn-primary px-3 border-end"
+                                        style="border-radius: 30px 0 0 30px;">Chi tiết</a>
+
+                                    <a href="" class="btn btn-sm btn-primary px-3"
+                                        style="border-radius: 0 30px 30px 0;">Mua ngay</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="package-item">
+                            <div class="overflow-hidden image-container">
+                                <img src="image/sanpham10.png" alt="Hình 1" style="width: 400px;">
+                            </div>
+                            <div class="d-flex border-bottom">
+                                <small class="flex-fill text-center border-end py-2"><i class="ti-crown"></i> Áo khoác
+                                    thời trang nữ</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt text-primary me-2"></i></small>
+                                <small class="flex-fill text-center py-2"><i
+                                        class="fa fa-user text-primary me-2"></i>20k</small>
+                            </div>
+                            <div class="text-center p-4">
+                                <h3 class="mb-0">120$</h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p>Áo khoác thời trang nữ</p>
+                                <div class="d-flex justify-content-center mb-2">
+                                    <a href="" class="btn btn-sm btn-primary px-3 border-end"
+                                        style="border-radius: 30px 0 0 30px;">Chi tiết</a>
+
+                                    <a href="" class="btn btn-sm btn-primary px-3"
+                                        style="border-radius: 0 30px 30px 0;">Mua ngay</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="package-item">
+                            <div class="overflow-hidden image-container">
+                                <img src="image/sanpham28.png" alt="Hình 1" style="width: 400px;">
+                            </div>
+                            <div class="d-flex border-bottom">
+                                <small class="flex-fill text-center border-end py-2"><i class="ti-crown"></i> Quần
+                                    dài</small>
+                                <small class="flex-fill text-center border-end py-2"><i
+                                        class="fa fa-calendar-alt text-primary me-2"></i></small>
+                                <small class="flex-fill text-center py-2"><i
+                                        class="fa fa-user text-primary me-2"></i>6k</small>
+                            </div>
+                            <div class="text-center p-4">
+                                <h3 class="mb-0">50$</h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p>Quần dài</p>
+                                <div class="d-flex justify-content-center mb-2">
+                                    <a href="" class="btn btn-sm btn-primary px-3 border-end"
+                                        style="border-radius: 30px 0 0 30px;">Chi tiết</a>
+
+                                    <a href="" class="btn btn-sm btn-primary px-3"
+                                        style="border-radius: 0 30px 30px 0;">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Giới thiệu</h6>
+                    <h1 class="mb-5"></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                                <h5>Linh hoạt</h5>
+                                <p>Tiện lợi cho người sử dụng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>Mua sắm</h5>
+                                <p>Nhanh gọn </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                                <h5>Chất lượng</h5>
+                                <p>Đem đến sản phẩm chất lượng 5 sao</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                                <h5>Sự kiện</h5>
+                                <p>Thường xuyên tổ chức các chương trình ưu đãi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- tien ich  End -->
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Team</h6>
+                    <h1 class="mb-5">Thông tin thành viên</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 offset-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="Assets/travelguide/nv5.jpg" alt="">
+                            </div>
+                            <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                                <a class="btn btn-square mx-1" href="https://www.facebook.com/bdtcdh.1911"
+                                    target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"
+                                        target="_blank"></i></a>
+                                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"
+                                        target="_blank"></i></a>
+                            </div>
+                            <div class="text-center p-4">
+                                <h5 class="mb-0"> Bùi Đoàn Tiên Chỉ Duy Hệ</h5>
+                                <small>2001204143</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Liên hệ</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>140 Lê Trọng Tấn, Tân phú</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0816431199</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hebui69@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Trưng bày</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="image/sanpham1.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="image/sanpham12.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="image/sanpham11.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="image/sanpham13.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="image/sanpham14.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="image/sanpham15.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Subscribe</h4>
+                    <p>Đăng kí để nhận thông báo về sản phẩm mới</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <script>
+        let __protocol = document.location.protocol;
+        let __baseUrl = __protocol + '//livechat.fpt.ai/v35/src';
+
+        let prefixNameLiveChat = 'Hỗ trợ shop';
+        let objPreDefineLiveChat = {
+            appCode: '656b9936b711434efc01720d4ef9401f',
+            themes: '',
+            appName: prefixNameLiveChat ? prefixNameLiveChat : 'Live support',
+            thumb: '',
+            icon_bot: ''
+        },
+            appCodeHash = window.location.hash.substr(1);
+        if (appCodeHash.length == 32) {
+            objPreDefineLiveChat.appCode = appCodeHash;
+        }
+
+        let fpt_ai_livechat_script = document.createElement('script');
+        fpt_ai_livechat_script.id = 'fpt_ai_livechat_script';
+        fpt_ai_livechat_script.src = __baseUrl + '/static/fptai-livechat.js';
+        document.body.appendChild(fpt_ai_livechat_script);
+
+        let fpt_ai_livechat_stylesheet = document.createElement('link');
+        fpt_ai_livechat_stylesheet.id = 'fpt_ai_livechat_script';
+        fpt_ai_livechat_stylesheet.rel = 'stylesheet';
+        fpt_ai_livechat_stylesheet.href = __baseUrl + '/static/fptai-livechat.css';
+        document.body.appendChild(fpt_ai_livechat_stylesheet);
+
+        fpt_ai_livechat_script.onload = function () {
+            fpt_ai_render_chatbox(objPreDefineLiveChat, __baseUrl, 'livechat.fpt.ai:443');
+        }
+    </script>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/lib/wow/wow.min.js"></script>
+    <script src="Assets/lib/easing/easing.min.js"></script>
+    <script src="Assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="Assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="Assets/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="Assets/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="Assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="Assets/js/main.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="Assets/js/script.js"></script>
+
+    <script>
+        function goToCart() {
+            // Thêm mã JavaScript ở đây để chuyển hướng đến trang giỏ hàng
+            alert("Đang phát triển!");
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+/* assets/css/style.css */
+
+:root {
+    --primary-color: #86B817;
+    --secondary-color: #130f40;
+    --light-color: #666;
+    --dark-color: #333;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: var(--border);
+    width: 100%;
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.header .navbar a {
+    margin-left: 20px;
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.header .navbar a:hover {
+    color: var(--primary-color);
+}
+
+#menu-btn {
+    display: none;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.product-detail {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: var(--border);
+    padding: 50px;
+    margin: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.product-images {
+    flex: 1;
+    text-align: center;
+}
+
+.product-images .main-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.product-images .thumbnail-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.product-images .thumbnail-images .thumbnail {
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: var(--border);
+    padding: 5px;
+}
+
+.product-info {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.product-info .product-title {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.product-info .product-price {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.product-info .product-description {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: 20px;
+}
+
+.product-info .quantity {
+    margin-bottom: 20px;
+}
+
+.product-info .quantity label {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-right: 10px;
+}
+
+.product-info .quantity input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.product-info .btn.add-to-cart {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.product-info .btn.add-to-cart:hover {
+    background-color: var(--dark-color);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: var(--border);
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-info {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .header-objects {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-object {
+        margin-bottom: 20px;
+    }
+
+    .header .navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .header .navbar a {
+        margin: 10px 0;
+    }
+
+    .header.active .navbar {
+        display: flex;
+    }
+}

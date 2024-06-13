@@ -1,0 +1,51 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.contact-item {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.cart-button,
+.home-button {
+    padding: 10px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-size: contain;
+}
+
+
+.home-button:hover {
+    opacity: 0.8;
+}
+
+.contact-item img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.home-button-wrapper,
+.cart-button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.cart-text {
+    margin-left: 5px;
+}

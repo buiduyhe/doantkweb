@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm Kiếm</title>
+    <!-- themify-icons -->
+    <link rel="stylesheet" href="Assets/themify-icons/themify-icons.css">
+    <link href="Assets/css/timkiem.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="search-cart-container">
+        <div class="search-container">
+            <img src="image/logo.png" class="phone-icon" alt="Phone">
+            <input id="searchInput" type="text" list="searchSuggestions" placeholder="Nhập từ khóa..." class="search-box" onkeyup="suggestKeywords(event)" onkeypress="searchKeyPress(event)">
+            <datalist id="searchSuggestions">
+                <!-- Thẻ datalist sẽ được cập nhật bằng JavaScript -->
+            </datalist>
+            <button class="search-button" onclick="searchProduct()">Tìm Kiếm</button>
+        </div>
+        <div class="cart-button-wrapper" onclick="goToCart()">
+            <div class="cart-button" style="background-image: url('image/giohang.jpg');"></div>
+            <span class="cart-text">Giỏ hàng</span>
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </div>
+
+    <script src="Assets/js/timkiem.js"></script>
+    
+</body>
+
+</html>

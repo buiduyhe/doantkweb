@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --yellow:#86B817;
+    --light-yellow:#86B817;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background:var(--light-yellow);
+    color:var(--black);
+    font-weight: 500;
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-align: center;
+    padding:.8rem 3rem;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.header .logo span{
+    color: var(--yellow);
+}
+
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.7rem;
+    color:var(--black);
+}
+
+.header .navbar a:hover{
+    color: var(--yellow);
+}
+
+.header .btn{
+    margin-top: 0;
+}
+
+.header #login-btn i{
+    font-size: 2.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+    display: none;
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+    display: none;
+}
+
+.header.active{
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+}
+
+.create-form-container,
+.login-form-container{
+    position: fixed;   
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container{
+    top: -105%;left: 0;
+    opacity: 0;
+}
+
+.create-form-container{
+    top: 105%;left: 0;
+    opacity: 0;
+}
+
+.create-form-container.active,
+.login-form-container.active{
+    top: 0;
+    opacity: 1;
+}
+
+
+
+.create-form-container form,
+.login-form-container form{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border: var(--border);
+    text-align: center;
+    width: 40rem;
+}
+
+.create-form-container form .buttons,
+.login-form-container form .buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.create-form-container form .btn,
+.login-form-container form .btn{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.create-form-container form h3,
+.login-form-container form h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.create-form-container form .box,
+.login-form-container form .box{
+    margin: 0.7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.create-form-container form p,
+.login-form-container form p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+} 
+
+.create-form-container form p a,
+.login-form-container form p a{
+    color: var(--yellow);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.create-form-container #close-create-form,
+.login-form-container #close-login-form{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    color: var(--black);
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-btn{
+        display: block;
+    }
+
+    #menu-btn.fa-times{
+        transform:rotate(180deg);
+    }
+
+    .header #login-btn i{
+        display: block;
+    }
+    .header #login-btn .btn{
+        display: none;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%;left: 0;right: 0;
+        background: #fff;
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header.active{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}

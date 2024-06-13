@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Loại bỏ thanh trượt ngang */
+}
+
+.product-container {
+    display: flex;
+    justify-content: flex-start;
+    /* Thay đổi từ flex-start thành space-between */
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100vw;
+    /* Đảm bảo container rộng bằng viewport */
+}
+
+.product {
+    flex-shrink: 0;
+    width: calc(20% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 15px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: #86B817;
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.product-buttons button,
+.product-buttons a {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    width: auto;
+}
+
+.add-to-cart-button {
+    background-color: rgb(55, 182, 70);
+}
+
+.add-to-cart-button:hover {
+    background-color: #ffa500;
+}
+
+.view-details-button {
+    background-color: #86B817;
+}
+
+.view-details-button:hover {
+    background-color: #3f5a05;
+}
+
+@media screen and (max-width: 1200px) {
+    .product {
+        width: calc(25% - 20px);
+        /* 25% cho 4 cột */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product {
+        width: calc(33.33% - 20px);
+        /* 33.33% cho 3 cột */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+        /* 50% cho 2 cột */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product {
+        width: calc(100% - 20px);
+        /* 100% cho 1 cột */
+    }
+}
+
+.product-container .product:nth-child() {
+    margin-right: 0;
+    /* Bỏ margin-right cho sản phẩm cuối cùng trên mỗi hàng */
+}
+
+#chatForm {
+    position: fixed;
+    bottom: 100px;
+    /* Điều chỉnh khoảng cách từ dưới */
+    right: 25px;
+    /* Điều chỉnh khoảng cách từ phải */
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 10px;
+}
+
+#chatFormContent textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#chatFormContent button {
+    padding: 8px 16px;
+    background-color: #6D9CCB;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#chatFormContent button:hover {
+    background-color: #00AFC8;
+}
+
+/* Style cho button chat */
+#fpt_ai_livechat_button {
+    width: 62px !important;
+    height: 62px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    position: fixed !important;
+    bottom: 25px !important;
+    right: 25px !important;
+    user-select: none !important;
+    cursor: pointer !important;
+    outline: none !important;
+    background-repeat: no-repeat !important;
+    background-size: 35px !important;
+    background-position-x: 14px !important;
+    background-position-y: 14px !important;
+    background: linear-gradient(90deg, #6D9CCB 0%, #00AFC8 99.79%) !important;
+    z-index: 2025 !important;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.16) !important;
+    border-radius: 100px 100px 0px 100px !important;
+}
